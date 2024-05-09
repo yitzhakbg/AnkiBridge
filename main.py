@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, Label, Button, Frame
 import pandas as pd
 import pandas as pd
+import os
 
 def parse_excel_file(excel_path):
     # Read the Excel file
@@ -71,7 +72,7 @@ def generate_profiles(self):
         except Exception as e:
             messagebox.showerror("Error", str(e))
 
-    self.generate_button.config(command=generate_profiles)
+        self.generate_button.config(command=generate_profiles)
 
 # This function will be called to integrate all components in the GUI application.
 
